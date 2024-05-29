@@ -94,7 +94,7 @@
             bindings = <&kp TAB>;
             key-positions = <23 36>;
             layers = <GAMING>;
-        }
+        };
     };
 
     keymap {
