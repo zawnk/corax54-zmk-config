@@ -24,7 +24,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             quick_tap_ms = <0>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -38,7 +38,7 @@
         };
     };
 
-      macros {
+    macros {
         shifted: macro_shifted_kp {
           #binding-cells = <1>;
           label = "MACRO_SHIFTED_KP";
@@ -89,6 +89,12 @@
             key-positions = <53 54>;
             layers = <GAMING>;
         };
+
+        gaming_tab {
+            bindings = <&kp TAB>;
+            key-positions = <23 36>;
+            layers = <GAMING>;
+        }
     };
 
     keymap {
@@ -120,11 +126,11 @@
             //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                               &kp ESCAPE    &trans        &trans        &trans        &trans         &trans                                      &trans        &trans        &trans         &trans        &trans       &trans
             //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &trans       &trans        &kp A         &kp S         &kp D         &kp F          &trans                                      &trans        &kp J         &kp K          &kp L         &kp SEMI     &trans        &trans
+                 &trans       &kp LCTRL     &kp A         &kp S         &kp D         &kp F          &trans                                      &trans        &kp J         &kp K          &kp L         &kp SEMI     &trans        &trans
             //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                              &trans        &trans        &trans        &trans        &trans         &trans        &trans          &trans        &trans        &trans        &trans         &trans        &trans       &trans
+                              &kp LSHFT     &trans        &trans        &trans        &trans         &trans        &trans          &trans        &trans        &trans        &trans         &trans        &trans       &trans
             //╰───────────────────────────────────────────────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼───────────────────────────────────────────────────────╯
-                                                                        &trans        &trans         &trans        &trans          &trans        &trans        &trans        &trans
+                                                                        &trans        &kp LALT       &trans        &trans          &trans        &trans        &trans        &trans
             //                                                        ╰─────────────┴─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────┴─────────────╯
             >;
 
