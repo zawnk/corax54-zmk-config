@@ -95,6 +95,18 @@
             key-positions = <23 36>;
             layers = <GAMING>;
         };
+
+        copy_shortcut {
+            bindings = <&kp LC(C)>;
+            key-positions = <38 39>;
+            layers = <BASE GAMING>;
+        };
+
+        paste_shortcut {
+            bindings = <&kp LC(V)>;
+            key-positions = <39 40>;
+            layers = <BASE GAMING>;
+        };
     };
 
     keymap {
